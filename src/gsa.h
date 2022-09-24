@@ -28,4 +28,7 @@ void free_tree(tree t);
 dynarr in_order(tree t);
 dynarr bf_order(tree t);
 
+// hacking our way out of a stack
+dynarr in_order2(tree t);
+
 #endif // GSA_H

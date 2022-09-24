@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.22.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake
+CMAKE_SOURCE_DIR = /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake
+CMAKE_BINARY_DIR = /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake/CMakeFiles /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake/src//CMakeFiles/progress.marks
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake/CMakeFiles 0
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake/CMakeFiles /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake/src//CMakeFiles/progress.marks
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/gsa.dir/rule:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/gsa.dir/rule
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/gsa.dir/rule
 .PHONY : src/CMakeFiles/gsa.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ gsa: src/CMakeFiles/gsa.dir/rule
 
 # fast build rule for target.
 gsa/fast:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/build
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/build
 .PHONY : gsa/fast
 
 # Convenience name for target.
 src/CMakeFiles/dynarr_test.dir/rule:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/dynarr_test.dir/rule
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/dynarr_test.dir/rule
 .PHONY : src/CMakeFiles/dynarr_test.dir/rule
 
 # Convenience name for target.
@@ -151,12 +151,12 @@ dynarr_test: src/CMakeFiles/dynarr_test.dir/rule
 
 # fast build rule for target.
 dynarr_test/fast:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/build
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/build
 .PHONY : dynarr_test/fast
 
 # Convenience name for target.
 src/CMakeFiles/traversal_test.dir/rule:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/traversal_test.dir/rule
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/traversal_test.dir/rule
 .PHONY : src/CMakeFiles/traversal_test.dir/rule
 
 # Convenience name for target.
@@ -165,7 +165,7 @@ traversal_test: src/CMakeFiles/traversal_test.dir/rule
 
 # fast build rule for target.
 traversal_test/fast:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/build
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/build
 .PHONY : traversal_test/fast
 
 bft.o: bft.c.o
@@ -173,7 +173,7 @@ bft.o: bft.c.o
 
 # target to build an object file
 bft.c.o:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/bft.c.o
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/bft.c.o
 .PHONY : bft.c.o
 
 bft.i: bft.c.i
@@ -181,7 +181,7 @@ bft.i: bft.c.i
 
 # target to preprocess a source file
 bft.c.i:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/bft.c.i
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/bft.c.i
 .PHONY : bft.c.i
 
 bft.s: bft.c.s
@@ -189,7 +189,7 @@ bft.s: bft.c.s
 
 # target to generate assembly for a file
 bft.c.s:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/bft.c.s
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/bft.c.s
 .PHONY : bft.c.s
 
 dft.o: dft.c.o
@@ -197,7 +197,7 @@ dft.o: dft.c.o
 
 # target to build an object file
 dft.c.o:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft.c.o
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft.c.o
 .PHONY : dft.c.o
 
 dft.i: dft.c.i
@@ -205,7 +205,7 @@ dft.i: dft.c.i
 
 # target to preprocess a source file
 dft.c.i:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft.c.i
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft.c.i
 .PHONY : dft.c.i
 
 dft.s: dft.c.s
@@ -213,15 +213,39 @@ dft.s: dft.c.s
 
 # target to generate assembly for a file
 dft.c.s:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft.c.s
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft.c.s
 .PHONY : dft.c.s
+
+dft2.o: dft2.c.o
+.PHONY : dft2.o
+
+# target to build an object file
+dft2.c.o:
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft2.c.o
+.PHONY : dft2.c.o
+
+dft2.i: dft2.c.i
+.PHONY : dft2.i
+
+# target to preprocess a source file
+dft2.c.i:
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft2.c.i
+.PHONY : dft2.c.i
+
+dft2.s: dft2.c.s
+.PHONY : dft2.s
+
+# target to generate assembly for a file
+dft2.c.s:
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dft2.c.s
+.PHONY : dft2.c.s
 
 dynarr.o: dynarr.c.o
 .PHONY : dynarr.o
 
 # target to build an object file
 dynarr.c.o:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dynarr.c.o
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dynarr.c.o
 .PHONY : dynarr.c.o
 
 dynarr.i: dynarr.c.i
@@ -229,7 +253,7 @@ dynarr.i: dynarr.c.i
 
 # target to preprocess a source file
 dynarr.c.i:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dynarr.c.i
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dynarr.c.i
 .PHONY : dynarr.c.i
 
 dynarr.s: dynarr.c.s
@@ -237,7 +261,7 @@ dynarr.s: dynarr.c.s
 
 # target to generate assembly for a file
 dynarr.c.s:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dynarr.c.s
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/dynarr.c.s
 .PHONY : dynarr.c.s
 
 dynarr_test.o: dynarr_test.c.o
@@ -245,7 +269,7 @@ dynarr_test.o: dynarr_test.c.o
 
 # target to build an object file
 dynarr_test.c.o:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/dynarr_test.c.o
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/dynarr_test.c.o
 .PHONY : dynarr_test.c.o
 
 dynarr_test.i: dynarr_test.c.i
@@ -253,7 +277,7 @@ dynarr_test.i: dynarr_test.c.i
 
 # target to preprocess a source file
 dynarr_test.c.i:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/dynarr_test.c.i
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/dynarr_test.c.i
 .PHONY : dynarr_test.c.i
 
 dynarr_test.s: dynarr_test.c.s
@@ -261,7 +285,7 @@ dynarr_test.s: dynarr_test.c.s
 
 # target to generate assembly for a file
 dynarr_test.c.s:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/dynarr_test.c.s
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/dynarr_test.dir/build.make src/CMakeFiles/dynarr_test.dir/dynarr_test.c.s
 .PHONY : dynarr_test.c.s
 
 traversal_test.o: traversal_test.c.o
@@ -269,7 +293,7 @@ traversal_test.o: traversal_test.c.o
 
 # target to build an object file
 traversal_test.c.o:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/traversal_test.c.o
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/traversal_test.c.o
 .PHONY : traversal_test.c.o
 
 traversal_test.i: traversal_test.c.i
@@ -277,7 +301,7 @@ traversal_test.i: traversal_test.c.i
 
 # target to preprocess a source file
 traversal_test.c.i:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/traversal_test.c.i
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/traversal_test.c.i
 .PHONY : traversal_test.c.i
 
 traversal_test.s: traversal_test.c.s
@@ -285,7 +309,7 @@ traversal_test.s: traversal_test.c.s
 
 # target to generate assembly for a file
 traversal_test.c.s:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/traversal_test.c.s
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/traversal_test.dir/build.make src/CMakeFiles/traversal_test.dir/traversal_test.c.s
 .PHONY : traversal_test.c.s
 
 tree.o: tree.c.o
@@ -293,7 +317,7 @@ tree.o: tree.c.o
 
 # target to build an object file
 tree.c.o:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/tree.c.o
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/tree.c.o
 .PHONY : tree.c.o
 
 tree.i: tree.c.i
@@ -301,7 +325,7 @@ tree.i: tree.c.i
 
 # target to preprocess a source file
 tree.c.i:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/tree.c.i
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/tree.c.i
 .PHONY : tree.c.i
 
 tree.s: tree.c.s
@@ -309,7 +333,7 @@ tree.s: tree.c.s
 
 # target to generate assembly for a file
 tree.c.s:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/tree.c.s
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/tree.c.s
 .PHONY : tree.c.s
 
 # Help Target
@@ -330,6 +354,9 @@ help:
 	@echo "... dft.o"
 	@echo "... dft.i"
 	@echo "... dft.s"
+	@echo "... dft2.o"
+	@echo "... dft2.i"
+	@echo "... dft2.s"
 	@echo "... dynarr.o"
 	@echo "... dynarr.i"
 	@echo "... dynarr.s"
@@ -353,6 +380,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/mailund/Classroom/birc-gsa/tree-traversal-c-cmake && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/mailund/Classroom/solutions/gsa/tree-traversal-c-cmake && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

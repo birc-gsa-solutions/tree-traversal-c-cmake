@@ -1,4 +1,4 @@
-add_library(gsa dynarr.c tree.c dft.c bft.c)
+add_library(gsa dynarr.c tree.c dft.c dft2.c bft.c)
 
 add_executable(dynarr_test dynarr_test.c)
 target_link_libraries(dynarr_test gsa)
