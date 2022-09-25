@@ -46,23 +46,45 @@ static void go_right(tree *child, tree *parent)
     *child = right;
 }
 
-// Move child <- parent and parent <- grandparent
-// and restore the tagged child
-static void go_up(tree *parent, tree *child)
+// If t is the left child of p, move us to p
+static void go_up_as_left_child(tree *t, tree *p)
 {
-    tree c = *child, p = *parent, grandparent = 0;
-    if (is_tagged(p->left))
-    {
-        grandparent = untag_pointer(p->left);
-        p->left = c;
-    }
-    else
-    {
-        grandparent = untag_pointer(p->right);
-        p->right = c;
-    }
-    *child = p;
-    *parent = grandparent;
+    assert(*p && is_tagged((*p)->left));
+    tree grandparent = untag_pointer((*p)->left);
+    (*p)->left = *t;
+    *t = *p;
+    *p = grandparent;
+}
+
+// If t is the right child of p, move us to p
+static void go_up_as_right_child(tree *t, tree *p)
+{
+    assert(*p && is_tagged((*p)->right));
+    tree grandparent = untag_pointer((*p)->right);
+    (*p)->right = *t;
+    *t = *p;
+    *p = grandparent;
+}
+
+// Run all the way to the left from t
+static void go_to_leftmost(tree *t, tree *p)
+{
+    while (*t && (*t)->left)
+        go_left(t, p);
+}
+
+// Go upwards until we are the left child of a parent,
+// then stop at that parent
+static void go_to_next_emitable_parent(tree *t, tree *p)
+{
+    tree grandparent = 0;
+
+    // up to parent we are right child of
+    while (*p && is_tagged((*p)->right))
+        go_up_as_right_child(t, p);
+    
+    // up one more (left) parent
+    go_up_as_left_child(t, p);
 }
 
 dynarr in_order2(tree t)
@@ -70,39 +92,24 @@ dynarr in_order2(tree t)
     dynarr a = new_dynarr();
 
     // Using a dummy root to avoid special cases with a NULL parent
-    struct node dummy_root = {.val = 0, .left = t, .right = 0};
+    struct node dummy_root = {.val = 0, .left = tag_pointer(0), .right = 0};
     tree parent = &dummy_root;
-    bool moving_left = true;
+    bool moving_left = false;
 
+    go_to_leftmost(&t, &parent); // Start in the leftmost node
     while (t && t != &dummy_root)
     {
-        if (moving_left)
-        {
-            if (t->left)
-            { // Move left when we can
-                go_left(&t, &parent);
-                continue;
-            }
-            else
-            { // Otherwise, change direction
-                moving_left = false;
-            }
-        }
-
-        // If we get here, we emit and move right or up
+        // Emit
         append(&a, t->val);
 
-        if (t->right) // Try to move right
+        if (t->right) // If we can go right, we do that and go all left
         {
             go_right(&t, &parent);
-            moving_left = true;
+            go_to_leftmost(&t, &parent);
         }
-        else
+        else // Run up the right-going-path and take one step as a left child
         {
-            // Run up the right-pointing-path and take one left step up
-            while (is_tagged(parent->right))
-                go_up(&parent, &t);
-            go_up(&parent, &t);
+            go_to_next_emitable_parent(&t, &parent);
         }
     }
 
